@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Usuario</title>
+
+    <link rel="stylesheet" href="/Templates/Header/header.css">
+    <link rel="stylesheet" href="/Templates/Footer/footer.css">
+    <link rel="stylesheet" href="/Templates/login/login.css">
+
+    <script src="/Mockups/xlu-include-file.js"></script>
+</head>
+<body>
+
+<header id="main_header" xlu-include-file="/Templates/Header/header.html"></header>
+
+<main id="main_register">
+    <div class="wrapper">
+        <h2>Registro de Usuarios</h2>
+
+        <!-- Formulario de Registro -->
+        <form id="registerForm">
+            <div class="input-box">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <div class="input-box">
+                <input type="submit" value="Registrarse">
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer id="main_footer" xlu-include-file="/Templates/Footer/footer.html"></footer>
+
+<!-- Enlazamos el archivo script.js -->
+<script src="/fetch.js"></script>
+
+</body>
+</html>
